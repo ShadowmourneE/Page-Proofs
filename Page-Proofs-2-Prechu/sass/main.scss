@@ -1,0 +1,89 @@
+*,*:before,*:after{
+  box-sizing: border-box;
+  list-style: none;
+}
+
+//for menu and logo
+@font-face{
+  font-family:SegoeWPN;
+  src: url(../fonts/SegoeWPN.ttf);
+}
+
+//For vertical centering
+%column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header{
+  width:1024px;
+  height:90px;
+  display: flex;
+  margin:0 auto;
+  padding:0 auto;
+  justify-content: space-between;
+  &__block{
+
+    display:flex;
+    flex-direction: row;
+    height:90px;
+    ul{
+      display:flex;
+      flex-direction: row;
+      list-style: none;
+      font-size: 1.2em;
+
+    }
+  }
+  &-menu-li{
+    padding: {
+      left:15px;
+      right:15px;
+    };
+
+    @extend %column-center;
+    font-family: SegoeWPN, sans-serif;
+    a{
+      text-decoration: none;
+      color:grey;
+    }
+    a:visited{
+      color:grey;
+    }
+    a:active{
+      color:grey;
+    }
+  }
+
+  &-logo{
+    margin:auto 0;
+    @extend %column-center;
+    width:45px;
+    height:45px;
+    margin:{
+      right:15px;
+    };
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color:cornflowerblue;
+    .logo-text{
+      display:flex;
+      justify-content: center;
+      font-size:2.1em;
+      color:white;
+      padding-top:10px;
+    }
+  }
+  &-logo-text{
+    @extend  %column-center;
+    font-family: SegoeWPN, sans-serif;
+    font-size:1.9em;
+  }
+}
+.main-slider{
+  height:490px;
+  width:100%;
+  background-image:url("../img/baner/baner.png");
+  background-size:cover ;
+}
