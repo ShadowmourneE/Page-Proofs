@@ -1,0 +1,218 @@
+/*@font-face {font-family: PTSans NarrowBold; /* Имя шрифта */
+    /*src: url(/page-proofs-1/fonts/PTSans.ttf);*/ /* Путь к файлу со шрифтом */
+/*<--в html через cdn*/
+*,*:before,*:after{
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:grey;
+}
+/*Header*/
+.header{
+    display: flex;
+    font-family: 'PT Sans Narrow', sans-serif;;
+    justify-content: space-between;
+    font-size: 0.9em;
+    padding:0 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /*Drop shadow*/
+    height: 55px;
+}
+.header .header__block:nth-child(4){
+    justify-content: center;
+}
+.head{
+    display: flex;
+}
+.header__block{
+    display: flex;
+}
+.header-logo{
+    display: flex;
+    align-self: center;
+}
+.header__block:nth-child(2) {
+    width: 80%;
+}
+.header__block:nth-child(4){
+     width:10%;
+ }
+.header-menu ul{
+    display: flex;
+}
+.header-menu .header-menu-li{
+    padding-right: 10px;
+}
+.header-menu ul:first-child{
+    font-weight: bold;
+}
+.header-menu ul .header-menu-li:nth-child(n+2){
+    color:grey;
+}
+.header-auth{
+    display: flex;
+    border-left: 1px solid lightgrey;
+}
+.header-auth a{
+    padding-left:10px ;
+}
+.header-auth a:first-child{
+    font-weight: bold;
+    color:black;
+}
+.header-auth a:last-child{
+    color:grey;
+}
+.header-counter__text{
+    padding-right: 10px;
+    font-weight: bold;
+}
+.header-counter__counter-number{
+    background-color: black;
+    border-radius: 60%;
+    color:white;
+    padding:0 3px;
+}
+.header-counter,.header-counter__count,.header-auth a,.header-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*Content*/
+.main_content{
+    display: flex;
+    justify-content: center;
+    margin:60px;
+}
+.miniature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.miniature img {
+    display: flex;
+    margin-bottom:15px;
+    height:180px;
+    width:115px;
+}
+.big_photo {
+    display: flex;
+    padding-left: 10px;
+}
+.above_description_sale{
+    font-family: 'PT Sans Narrow', sans-serif;;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    letter-spacing: -1px;
+}
+.man{
+   text-align:center;
+   margin-bottom: 20px;
+    color:lightskyblue;
+}
+.before_price{
+    display: block;
+    margin-bottom: 40px;
+}
+.description_and_below{
+    padding: 20px 70px 20px 70px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;;
+    color:grey;
+    font-size: 0.9em;
+}
+.properties{
+    color:black;
+    font-weight: bold;
+    padding-top: 50px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-size: 1.1em;
+}
+.colors{
+    padding-right:80px;
+    border-bottom: 1px solid darkgrey;
+}
+.size{
+    margin-left:100px;
+    padding-right: 165px;
+    border-bottom: 1px solid darkgrey;
+}
+.color_properties{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+.columns img{
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.columns span{
+    display: flex;
+    padding-bottom: 2px;
+}
+.buy_button{
+    background-color:#b3a2a2;
+    border-radius: 4px;
+    width:35vw;
+    height:50px;
+    color:azure;
+    font-size: 0.9em;
+    margin-top:175px;
+}
+/*Products*/
+.products_grid-goods{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 15px;
+}
+.products_block{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.products_caption-item1{
+    font-size: 0.9em;
+    color:grey;
+}
+.products_caption-item2{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', sans-serif;;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.grid-goods-item{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.grid-goods-item img{
+    height:260px;
+    width:200px;
+}
+.grid-photos_description-item{
+    color:grey;
+}
+.item-full_name{
+    font-family: 'PT Sans Narrow', sans-serif;;
+    font-size: 1.1em;
+    font-weight: bold;
+    color:black;
+}
+
+
+
+
+
+
