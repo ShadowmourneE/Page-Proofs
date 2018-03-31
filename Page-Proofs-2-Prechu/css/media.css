@@ -8,13 +8,39 @@
     padding-right: 10px;
     width: auto;
     margin: 0;
-    position: relative;
   }
 }
 
 @media screen and (max-width: 595px) {
   .header-menu-li {
-    padding-left: 2px;
-    padding-right: 2px;
+    display: none;
+  }
+  .header-menu-li:last-child {
+    display: flex;
+  }
+  .header-menu-li:last-child button {
+    border: 0;
+    background-color: powderblue;
+  }
+  .main-slider-text span {
+    font-size: 1em;
+  }
+  .notes {
+    flex-direction: column;
+  }
+  .notes__block {
+    flex-direction: row;
+  }
+  .notes__block-first {
+    height: auto;
+    width: 100%;
+  }
+  .notes__block-second {
+    height: auto;
+    width: 100%;
+  }
+  .notes__block-third {
+    height: auto;
+    width: 100%;
   }
 }
