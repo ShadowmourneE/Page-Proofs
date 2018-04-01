@@ -1,0 +1,39 @@
+*,*:before,*:after{
+  box-sizing: border-box;
+  list-style: none;
+}
+.slider{
+  height:1000px;
+  background: url("../img/slider/background-head-slid.png") no-repeat;
+  background-size:cover;
+}
+.header{
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  &__block{
+    display:flex;
+    flex-direction: row;
+    ul{
+      display:flex;
+      flex-direction: row;
+      list-style: none;
+      font-size: 1.2em;
+
+    }
+  }
+  &-menu-li{
+    display:flex;
+
+  }
+  a{
+    text-decoration: none;
+    color:grey;
+  }
+  a:visited{
+    color:grey;
+  }
+  a:active{
+    color:grey;
+  }
+}
+

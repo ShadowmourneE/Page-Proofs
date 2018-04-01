@@ -1,0 +1,44 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.slider {
+  height: 1000px;
+  background: url("../img/slider/background-head-slid.png") no-repeat;
+  background-size: cover;
+}
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+}
+
+.header__block {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__block ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.header-menu-li {
+  display: flex;
+}
+
+.header a {
+  text-decoration: none;
+  color: grey;
+}
+
+.header a:visited {
+  color: grey;
+}
+
+.header a:active {
+  color: grey;
+}
