@@ -16,10 +16,9 @@
 }
 
 @media screen and (max-width:595px)  {
-  .sign_button{
-    height:auto;
-    width:100%;
-  }
+  
+  
+
 .header{
   &-menu-li{
     display: none;
@@ -34,7 +33,7 @@
   }
 }
   .main-slider-text span{
-    font-size: 1em;
+    font-size: 3.6vw;
   }
 .notes{
   flex-direction: column;
@@ -45,17 +44,27 @@
     flex-direction: row;
     &-first{
       height:auto;
-      width:100%;
+      width:27%;
     }
     &-second{
       height:auto;
-      width:100%;
+      width:27%;
     }
     &-third{
       height:auto;
-      width:100%;
+      width:27%;
     }
   }
 }
+  .main-slider-button .sign_button{
+    margin:{
+      top:60px;
+    };
+    height:auto;
+    width:75%;
+    border-radius: 5%;
+    border:0;
+    font-size:3vw;
+  }
 }
 

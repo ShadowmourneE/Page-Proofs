@@ -12,10 +12,6 @@
 }
 
 @media screen and (max-width: 595px) {
-  .sign_button {
-    height: auto;
-    width: 100%;
-  }
   .header-menu-li {
     display: none;
   }
@@ -27,7 +23,7 @@
     background-color: powderblue;
   }
   .main-slider-text span {
-    font-size: 1em;
+    font-size: 3.6vw;
   }
   .notes {
     flex-direction: column;
@@ -38,14 +34,22 @@
   }
   .notes__block-first {
     height: auto;
-    width: 100%;
+    width: 27%;
   }
   .notes__block-second {
     height: auto;
-    width: 100%;
+    width: 27%;
   }
   .notes__block-third {
     height: auto;
-    width: 100%;
+    width: 27%;
+  }
+  .main-slider-button .sign_button {
+    margin-top: 60px;
+    height: auto;
+    width: 75%;
+    border-radius: 5%;
+    border: 0;
+    font-size: 3vw;
   }
 }
