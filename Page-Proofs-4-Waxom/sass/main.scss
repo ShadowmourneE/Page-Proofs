@@ -2,38 +2,88 @@
   box-sizing: border-box;
   list-style: none;
 }
-.slider{
-  height:1000px;
-  background: url("../img/slider/background-head-slid.png") no-repeat;
-  background-size:cover;
-}
-.header{
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  &__block{
-    display:flex;
-    flex-direction: row;
-    ul{
-      display:flex;
-      flex-direction: row;
-      list-style: none;
-      font-size: 1.2em;
 
+.slider{
+  font-family: 'Raleway', sans-serif;
+  font-size:0.8em;
+  height:1026px;
+  background: #555556 url(../img/slider/background.jpg) no-repeat center bottom / cover;
+  background-blend-mode:multiply;
+  &-header{
+    align-items: center;
+    height:100px;
+    display:flex;
+    &_logo{
+      img{
+        height:40px;
+        width:40px;
+      }
+    }
+    &_textlog{
+      align-self: center;
+      font-size:1.6em;
+      color:white;
+    }
+    &_menu{
+      display:flex;
+      display:-webkit-flex;
+      color:white;
+      margin:{
+        top:10px;
+      } ;
+      li{
+        display:flex;
+        padding:{
+          left:10px;
+          right:10px;
+        };
+        align-self: center;
+        font-size: 1.1em;
+      }
+      li:hover{
+        color:#6f9295;
+      }
+      li:nth-child(9){
+        margin-left:15px;
+      }
+    }
+    &-itemslog{
+      display:flex;
+      display:-webkit-flex;
     }
   }
-  &-menu-li{
-    display:flex;
+  &-info{
+    h3,h4{
+      text-align: center;
+      color:whitesmoke;
+    }
+    h4{
+      font-family: 'Raleway Bold',sans-serif;
+      font-size:40px;
+    }
+    span{
+      display:flex;
+      justify-content: center;
+      color:whitesmoke;
+    }
+    padding:{
+      top:230px;
+    };
+  }
 
-  }
-  a{
-    text-decoration: none;
-    color:grey;
-  }
-  a:visited{
-    color:grey;
-  }
-  a:active{
-    color:grey;
+  &_button-start{
+    display:flex;
+    justify-content: center;
+    padding:{
+      top:30px;
+    };
+    input{
+      border-radius: 5%;
+      border:0;
+      background:#998675;
+      color:white;
+      width:120px;
+      height:35px;
+    }
   }
 }
-

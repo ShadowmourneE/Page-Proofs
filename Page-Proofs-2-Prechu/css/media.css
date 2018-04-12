@@ -12,6 +12,10 @@
 }
 
 @media screen and (max-width: 595px) {
+  .sign_button {
+    height: auto;
+    width: 100%;
+  }
   .header-menu-li {
     display: none;
   }
@@ -29,6 +33,7 @@
     flex-direction: column;
   }
   .notes__block {
+    padding-bottom: 10px;
     flex-direction: row;
   }
   .notes__block-first {
