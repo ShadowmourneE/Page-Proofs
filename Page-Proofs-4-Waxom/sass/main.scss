@@ -4,14 +4,20 @@
 }
 
 .slider{
+  display: -webkit-flex;
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-size:0.8em;
-  height:1026px;
+  height:899px;
   background: #555556 url(../img/slider/background.jpg) no-repeat center bottom / cover;
   background-blend-mode:multiply;
   &-header{
     align-items: center;
     height:100px;
+    margin:{
+      left:15vw;
+      right:15vw;
+    };
     display:flex;
     &_logo{
       img{
@@ -21,7 +27,7 @@
     }
     &_textlog{
       align-self: center;
-      font-size:1.6em;
+      font-size:2vw;
       color:white;
     }
     &_menu{
@@ -34,17 +40,21 @@
       li{
         display:flex;
         padding:{
-          left:10px;
-          right:10px;
+          left:0.9vw;
+          right:0.9vw;
         };
         align-self: center;
-        font-size: 1.1em;
+        font-size: 0.9vw;
+        img{
+          width:1.2vw;
+          height:1.2vw;
+        }
       }
       li:hover{
         color:#6f9295;
       }
       li:nth-child(9){
-        margin-left:15px;
+        margin-left:1.2vw;
       }
     }
     &-itemslog{
@@ -86,4 +96,10 @@
       height:35px;
     }
   }
+}
+
+.sliderPress{
+  display:flex;
+  align-self: center;
+  
 }
