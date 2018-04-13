@@ -4,20 +4,23 @@
 }
 
 .slider {
-  display: -webkit-flex;
   display: flex;
+  justify-content: space-between;
   font-family: 'Raleway', sans-serif;
   font-size: 0.8em;
-  height: 899px;
+  height: 800px;
   background: #555556 url(../img/slider/background.jpg) no-repeat center bottom/cover;
   background-blend-mode: multiply;
+}
+
+.slider__block:nth-child(1) {
+  display: flex;
+  justify-content: center;
 }
 
 .slider-header {
   align-items: center;
   height: 100px;
-  margin-left: 15vw;
-  margin-right: 15vw;
   display: flex;
 }
 
@@ -36,14 +39,14 @@
   display: flex;
   display: -webkit-flex;
   color: white;
-  margin-top: 10px;
+  margin-top: 15px;
+  padding: 0;
 }
 
 .slider-header_menu li {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
   display: flex;
-  padding-left: 0.9vw;
-  padding-right: 0.9vw;
-  align-self: center;
   font-size: 0.9vw;
 }
 
@@ -56,33 +59,34 @@
   color: #6f9295;
 }
 
-.slider-header_menu li:nth-child(9) {
-  margin-left: 1.2vw;
-}
-
 .slider-header-itemslog {
   display: flex;
   display: -webkit-flex;
 }
 
 .slider-info {
+  display: flex;
+  flex-direction: column;
   padding-top: 230px;
 }
 
 .slider-info h3, .slider-info h4 {
-  text-align: center;
+  font-size: 1.8vw;
+  display: flex;
+  justify-content: center;
   color: whitesmoke;
 }
 
 .slider-info h4 {
   font-family: 'Raleway Bold',sans-serif;
-  font-size: 40px;
+  font-size: 3.2vw;
 }
 
 .slider-info span {
   display: flex;
   justify-content: center;
   color: whitesmoke;
+  font-size: 1.0vw;
 }
 
 .slider_button-start {
@@ -103,4 +107,16 @@
 .sliderPress {
   display: flex;
   align-self: center;
+}
+
+.sliderPress img {
+  height: 45px;
+}
+
+.left-slider {
+  margin: 0 auto;
+}
+
+.right-slider {
+  margin: 0 auto;
 }

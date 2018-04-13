@@ -4,21 +4,28 @@
 }
 
 .slider{
-  display: -webkit-flex;
+  
+  &__block:nth-child(1){
+   display:flex;
+   justify-content: center;
+  }
   display: flex;
+  justify-content: space-between;
   font-family: 'Raleway', sans-serif;
   font-size:0.8em;
-  height:899px;
+  height:800px;
   background: #555556 url(../img/slider/background.jpg) no-repeat center bottom / cover;
   background-blend-mode:multiply;
   &-header{
     align-items: center;
     height:100px;
-    margin:{
-      left:15vw;
-      right:15vw;
-    };
+  
+    // margin:{
+    //   left:15vw;
+    //   right:15vw;
+    // };
     display:flex;
+    
     &_logo{
       img{
         height:40px;
@@ -35,15 +42,16 @@
       display:-webkit-flex;
       color:white;
       margin:{
-        top:10px;
-      } ;
-      li{
-        display:flex;
+        top:15px;
+      };
+      padding:0;
+      li{   
         padding:{
-          left:0.9vw;
-          right:0.9vw;
+          left:0.5vw;
+          right:0.5vw;
         };
-        align-self: center;
+        display:flex;
+        //justify-content: space-between;
         font-size: 0.9vw;
         img{
           width:1.2vw;
@@ -53,28 +61,35 @@
       li:hover{
         color:#6f9295;
       }
-      li:nth-child(9){
-        margin-left:1.2vw;
-      }
+      
     }
     &-itemslog{
       display:flex;
       display:-webkit-flex;
     }
   }
+
+  
+  
   &-info{
+    display:flex;
+    flex-direction: column;
+
     h3,h4{
-      text-align: center;
+      font-size: 1.8vw;
+      display:flex;
+      justify-content: center;
       color:whitesmoke;
     }
     h4{
       font-family: 'Raleway Bold',sans-serif;
-      font-size:40px;
+      font-size:3.2vw;
     }
     span{
       display:flex;
       justify-content: center;
       color:whitesmoke;
+      font-size: 1.0vw;
     }
     padding:{
       top:230px;
@@ -97,9 +112,17 @@
     }
   }
 }
-
 .sliderPress{
   display:flex;
   align-self: center;
+  img{
+  height:45px;
   
+  }
+}
+.left-slider{
+  margin:0 auto;
+}
+.right-slider{
+  margin:0 auto;
 }
