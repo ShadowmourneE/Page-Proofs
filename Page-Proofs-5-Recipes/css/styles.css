@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+  transition: color 0.2s linear;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+/*Start Header*/
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 0 10%;
+}
+.logo {
+  width: 129px;
+  height: 108px;
+}
+.logo__img {
+  width: 100%;
+  height: auto;
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 19px;
+}
+.section-title:after {
+  content: "";
+  width: 88px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: #f69679;
+}
+.section-title--left {
+  align-items: left;
+}
+.main-menu {
+  margin-left: auto;
+}
+.main-menu__list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main-menu__item {
+  list-style: none;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+.main-menu__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.button-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  list-style: none;
+  text-align: right;
+  padding: 10px 0 0;
+  margin: 0;
+}
+.button-menu--open {
+  display: block;
+}
+.button-menu__link {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px 40px;
+  display: block;
+  text-decoration: none;
+}
+.button-menu__link:hover {
+  background-color: #eee;
+  color: #333;
+}
+/*End of header*/
+.main {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+.main__title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1.8px;
+  text-shadow: 0 1px 40px rgba(1, 1, 1, 0.55);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 40px;
+}
+.main__title-big {
+  display: block;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 100px;
+  font-style: normal;
+}
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 3px solid #fff;
+  width: 280px;
+  height: 68px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.main__description {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.features {
+  padding: 100px 10%;
+}
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.features__item {
+  list-style: none;
+  text-align: center;
+  width: 360px;
+}
+.features__item:before {
+  content: "";
+  width: 107px;
+  height: 107px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.features__item--burger:before {
+  background-image: url('../img/burger@2x.png');
+}
+.features__item--money:before {
+  background-image: url('../img/money@2x.png');
+}
+.features__item--man:before {
+  background-image: url('../img/man@2x.png');
+}
+.features__description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #8b8b8b;
+}
+.ext {
+  background-color: #f7f7f7;
+  padding: 180px 10% 0;
+  height: 700px;
+  display: flex;
+}
+.ext__image {
+  width: 523px;
+  background-image: url('../img/iphone@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: -80px;
+  margin-right:8px;
+}
+.ext__content {
+  width: 543px;
+  margin-left: auto;
+}
+.ext__description {
+  color: #8b8b8b;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 0 0 30px;
+}
+.ext__link {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 12px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.ext__link--extstore {
+  width: 115px;
+  height: 40px;
+}
+.ext__link--googleplay {
+  background-image: url('../img/googleplay@2x.png');
+  width: 121px;
+  height: 40px;
+}
+footer {
+  margin-top:10px;
+text-align: center;
+color:#00008B;
+}
+.footer__copyright a{
+  font-size:1.1em;
+  text-decoration: none;
+  color: #8b8b8b;
+  font-family: 'Lato', sans-serif;
+}
