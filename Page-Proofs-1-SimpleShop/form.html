@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- jquery validation plugin //-->
+
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js"></script>
+
+    <script type="text/javascript" src="validation_reg.js"></script>
+
+    <link rel="stylesheet" href="css/form.css" type="text/css" />
+
+    <style type="text/css">
+        .hidden{
+            display:none;
+
+        }
+    </style>
+</head>
+<body>
+<form action="registration_process.php" method="post" id="form_register">
+
+    <fieldset>
+
+        <legend>Registration</legend>
+
+            <label for="reg_name">Name*</label>
+
+            <input type="text" name="name" id="reg_name" />
+
+
+            <label for="reg_user">Username*</label>
+
+            <input type="text" name="username" id="reg_user" />
+
+            <label for="reg_email">Email*</label>
+
+            <input type="text" name="email" id="reg_email" />
+
+            <label for="reg_web">Website*</label>
+
+            <input type="text" name="web" id="reg_web" />
+
+            <label for="reg_date">Date of Birth*</label>
+
+            <input type="text" name="date" id="reg_date" />
+
+            <label for="reg_pass1">Password*</label>
+
+            <input type="password" name="pass1" id="reg_pass1" />
+
+            <label for="reg_pass2">Confirm Password*</label>
+
+            <input type="password" name="pass2" id="reg_pass2" />
+
+            <input type="submit" name="register" value="Registraion" id="reg_submit" />
+
+            <input type="reset" name="Cancel" value="Cancel" id="reg_reset" />
+
+    </fieldset>
+    </form>
+    <script src="js/validation_reg.js"></script>
+
+</body>
+</html>
