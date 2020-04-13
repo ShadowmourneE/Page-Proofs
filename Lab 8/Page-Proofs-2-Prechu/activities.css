@@ -1,0 +1,58 @@
+#text {
+    font-size: large;
+    font-weight: bold;
+}
+
+#logo {
+    padding: 3px 0;
+}
+
+#search {
+    padding-top: 12px;
+}
+
+#pics {
+    float: left;
+    padding: 20px;
+    height: : 700px;
+    width: 480px;
+}
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 3px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.mainhead,
+#bodyfoot {
+    border-bottom: 4px solid #eeeeee;
+}
+
+#bodyfoot div {
+    margin-left: 50px;
+}
+
+.mainbody p {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    float: right;
+}
+
+.mainfoot>p {
+    text-align: center;
+}
